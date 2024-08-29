@@ -1,60 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.imgport {
-    background-image: url("./assests/autowall-demo-2.gif");
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.tit {
-    color: black;
-    font-family: "Segoe Script";
-    font-size: 80px;
-    margin: 0;
-}
-
-.tit2 {
-    color: black;
-    font-family: "Segoe Script";
-    font-size: 60px;
-    margin: 0;
-}
-
-.word {
-    text-align: center;
-    font-family: "Times New Roman", serif;
-    font-size: 3rem;
-    color: rgb(65, 104, 104);
-}
-
-.word1 {
-    text-align: center;
-    font-family: "Times New Roman", serif;
-    font-size: 1.3rem;
-    color: rgb(65, 104, 104);
-}
-
-.spantit {
-    color: grey;
-}
-
-.bkline {
-    text-align: center;
-    font-size: 80px;
-}
-
-.img2 {
-    background-color: white;
     padding: 20px;
-    text-align: center;
 }
 
 .myphot {
@@ -64,19 +19,42 @@
     margin: 20px auto;
 }
 
-.outer-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 0 10px;
+.tit, .tit2 {
+    text-align: center;
+    font-family: "Segoe Script", sans-serif;
+    color: black;
+    padding: 10px;
 }
 
-.container {
-    width: 100%;
+.tit {
+    font-size: 4rem;
+}
+
+.tit2 {
+    font-size: 3rem;
+}
+
+.word, .word1 {
+    text-align: center;
+    font-family: "Times New Roman", serif;
+    color: rgb(65, 104, 104);
+}
+
+.word {
+    font-size: 2rem;
+    margin: 20px;
+}
+
+.word1 {
+    font-size: 1.3rem;
+    margin: 10px;
+}
+
+.outer-container {
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
     flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
 }
 
 .ameert {
@@ -84,36 +62,29 @@
     margin: 10px;
 }
 
-.gif-class, .gif {
-    width: 100%;
-    max-width: 350px;
-    border-radius: 10%;
-    margin-bottom: 50px;
+.gif-class {
+    margin: 10px;
+    width: 300px;
     height: auto;
-}
-
-.fullscreen-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
+    border-radius: 10%;
 }
 
 .butt {
     width: 200px;
     height: 50px;
-    background-color: rgb(55, 48, 48) !important;
+    background-color: rgb(55, 48, 48);
     border-radius: 70px;
     border: none;
-    padding: 20px;
-    color: black;
+    color: white;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin: 20px auto;
+    display: block;
 }
 
 .butt:hover {
-    background-color: rgb(55, 48, 48) !important;
+    background-color: rgb(35, 28, 28);
 }
 
 .bottom-container {
@@ -125,41 +96,51 @@
 .footer-link {
     margin: 0 20px;
     color: white;
+    text-decoration: none;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+    .myphot {
+        height: 150px;
+        width: 150px;
+    }
+
     .tit {
-        font-size: 50px;
+        font-size: 3rem;
     }
 
     .tit2 {
-        font-size: 40px;
-    }
-
-    .word {
         font-size: 2rem;
     }
 
-    .word1 {
-        font-size: 1rem;
+    .word {
+        font-size: 1.5rem;
     }
 
-    .container {
-        flex-direction: column;
-        align-items: center;
+    .gif-class {
+        width: 250px;
     }
+}
 
-    .gif-class, .gif {
-        margin: 0 auto;
-        width: 80%;
-    }
-
+@media screen and (max-width: 480px) {
     .myphot {
-        margin-left: auto;
-        margin-right: auto;
+        height: 120px;
+        width: 120px;
     }
 
-    .ameert {
-        text-align: center;
+    .tit {
+        font-size: 2.5rem;
+    }
+
+    .tit2 {
+        font-size: 1.5rem;
+    }
+
+    .word {
+        font-size: 1.2rem;
+    }
+
+    .gif-class {
+        width: 200px;
     }
 }
