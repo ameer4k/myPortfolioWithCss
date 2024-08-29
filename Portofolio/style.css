@@ -1,125 +1,78 @@
-.container
-{
-}
-.imgport
-{
-    background-image: url("./assests/autowall-demo-2.gif");
-    height: 100vh;
-
-
-}
-.tit
-{
-    display: flex;
-    color: black;
-    font-family: "Segoe Script";
-    text-align: center;
-    padding-top:150px; 
-    font-size: 80px;
-    justify-content: center;
-    align-items: center;
-    
-}
-.tit2
-{
-    display: flex;
-    color: black;
-    font-family: "Segoe Script";
-    text-align: center; 
-    font-size: 60px;
-    justify-content: center;
-    align-items: center;
-    
-}
-.word
-{
-    text-align: center;
-    font-family: "Times New Roman", serif;
-    font-size: 3rem;
-    color: rgb(65, 104, 104);
-    
-}
-.word1
-{
-    text-align: center;
-    font-family: "Times New Roman", serif;
-    font-size: 1.3rem;
-    color: rgb(65, 104, 104);
-
-}
-.spantit
-{
-    color:grey;
-}
-.bkline
-{
-    text-align: center;
-    font-size: 80px;
-
-}
-.img2
-{
-    background-color: white ;
-    
-}
-.myphot
-{
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    margin-left: 660px;
-    margin-top: 70px;
-    margin-bottom: 70px;
-    
-}
-.gifp
-{
-
-}
-.sp1
-{
-    color:rgb(65, 104, 104);
-    font-weight: 800;
-}
-.outer-container
-{
-    margin-left: -200px;
-    
-}
 .container {
-    display: flex; 
-    align-items: flex-start; 
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    margin: 0 auto;
 }
 
-.ameert {
-    flex: 1; 
+.imgport {
+    background-image: url("./assets/autowall-demo-2.gif");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.gif-class {
-    margin-right: 20px;
-    margin-left: 40%;
-    width: 350px;
+.tit, .tit2 {
+    color: black;
+    font-family: "Segoe Script";
+    text-align: center;
+    margin: 20px 0;
+}
+
+.tit {
+    font-size: 6vw; 
+}
+
+.tit2 {
+    font-size: 4.5vw; 
+}
+
+.word, .word1 {
+    text-align: center;
+    font-family: "Times New Roman", serif;
+    color: rgb(65, 104, 104);
+}
+
+.word {
+    font-size: 2.5rem;
+}
+
+.word1 {
+    font-size: 1.3rem;
+}
+
+.spantit {
+    color: grey;
+}
+
+.myphot {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+
+.gif-class, .gif {
+    width: 80%;
+    max-width: 350px;
     border-radius: 10%;
-    margin-bottom: 50px;
-    height: auto; 
+    margin: 20px auto;
+    height: auto;
 }
-.outer{
-    margin-left: -100px;
-}
-.gif
-{
-    margin-right: 325px;
-    margin-left: 40%;
-    width: 350px;
-    margin-bottom: 100px;
-    height: auto; 
-}
+
 .fullscreen-container {
     display: flex;
-    justify-content: center; 
-    align-items: center; 
-    margin: 0; 
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
 }
 
 .butt {
@@ -128,31 +81,81 @@
     background-color: rgb(55, 48, 48) !important; 
     border-radius: 70px;
     border: none; 
-    padding: 20px 20px; 
     color: black; 
     font-size: 16px;
     cursor: pointer; 
     transition: background-color 0.3s ease; 
-
+    text-align: center;
+    margin: 20px auto;
 }
 
-.butt:hover 
-{
-    background-color:rgb(55, 48, 48)  !important; 
-}
-.bottom-container
-{
-background-color: black;
-padding: 50px 0 20px;
-
-}
-.footer-link
-{
-    margin-left: 30px;
-    margin-right: 40px;
-    color:white;
+.butt:hover {
+    background-color: rgb(75, 65, 65) !important; 
 }
 
+/* Footer Styling */
+.bottom-container {
+    background-color: black;
+    padding: 20px 0;
+    text-align: center;
+}
 
+.footer-link {
+    margin: 0 20px;
+    color: white;
+    text-decoration: none;
+}
 
+.footer-link:hover {
+    text-decoration: underline;
+}
 
+@media (max-width: 768px) {
+    .tit {
+        font-size: 8vw;
+    }
+    
+    .tit2 {
+        font-size: 6vw;
+    }
+    
+    .word {
+        font-size: 2rem;
+    }
+    
+    .myphot {
+        height: 100px;
+        width: 100px;
+    }
+
+    .gif-class, .gif {
+        width: 90%;
+    }
+
+    .butt {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .tit {
+        font-size: 10vw;
+    }
+    
+    .tit2 {
+        font-size: 8vw;
+    }
+    
+    .word {
+        font-size: 1.5rem;
+    }
+
+    .myphot {
+        height: 80px;
+        width: 80px;
+    }
+
+    .butt {
+        width: 100%;
+    }
+}
