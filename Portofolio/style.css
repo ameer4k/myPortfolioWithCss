@@ -27,11 +27,11 @@
 }
 
 .tit {
-    font-size: 6vw; 
+    font-size: 6vw;
 }
 
 .tit2 {
-    font-size: 4.5vw; 
+    font-size: 4.5vw;
 }
 
 .word, .word1 {
@@ -57,6 +57,7 @@
     width: 150px;
     border-radius: 50%;
     margin: 20px 0;
+    transition: height 0.3s ease, width 0.3s ease;
 }
 
 .gif-class, .gif {
@@ -78,22 +79,21 @@
 .butt {
     width: 200px;
     height: 50px;
-    background-color: rgb(55, 48, 48) !important; 
+    background-color: rgb(55, 48, 48) !important;
     border-radius: 70px;
-    border: none; 
-    color: black; 
+    border: none;
+    color: black;
     font-size: 16px;
-    cursor: pointer; 
-    transition: background-color 0.3s ease; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
     text-align: center;
     margin: 20px auto;
 }
 
 .butt:hover {
-    background-color: rgb(75, 65, 65) !important; 
+    background-color: rgb(75, 65, 65) !important;
 }
 
-/* Footer Styling */
 .bottom-container {
     background-color: black;
     padding: 20px 0;
@@ -124,8 +124,8 @@
     }
     
     .myphot {
-        height: 100px;
-        width: 100px;
+        height: 120px;
+        width: 120px;
     }
 
     .gif-class, .gif {
@@ -151,8 +151,12 @@
     }
 
     .myphot {
-        height: 80px;
-        width: 80px;
+        height: 100px;
+        width: 100px;
+    }
+
+    .gif-class, .gif {
+        width: 100%;
     }
 
     .butt {
