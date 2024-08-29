@@ -1,70 +1,94 @@
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 0 20px;
-    margin: 0 auto;
 }
 
 .imgport {
-    background-image: url("./assets/autowall-demo-2.gif");
-    background-size: cover;
-    background-position: center;
+    background-image: url("./assests/autowall-demo-2.gif");
     height: 100vh;
-    width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-}
-
-.tit, .tit2 {
-    color: black;
-    font-family: "Segoe Script";
     text-align: center;
-    margin: 20px 0;
 }
 
 .tit {
-    font-size: 6vw;
+    color: black;
+    font-family: "Segoe Script";
+    font-size: 80px;
+    margin: 0;
 }
 
 .tit2 {
-    font-size: 4.5vw;
-}
-
-.word, .word1 {
-    text-align: center;
-    font-family: "Times New Roman", serif;
-    color: rgb(65, 104, 104);
+    color: black;
+    font-family: "Segoe Script";
+    font-size: 60px;
+    margin: 0;
 }
 
 .word {
-    font-size: 2.5rem;
+    text-align: center;
+    font-family: "Times New Roman", serif;
+    font-size: 3rem;
+    color: rgb(65, 104, 104);
 }
 
 .word1 {
+    text-align: center;
+    font-family: "Times New Roman", serif;
     font-size: 1.3rem;
+    color: rgb(65, 104, 104);
 }
 
 .spantit {
     color: grey;
 }
 
+.bkline {
+    text-align: center;
+    font-size: 80px;
+}
+
+.img2 {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
 .myphot {
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
-    margin: 20px 0;
-    transition: height 0.3s ease, width 0.3s ease;
+    margin: 20px auto;
+}
+
+.outer-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.ameert {
+    flex: 1;
+    margin: 10px;
 }
 
 .gif-class, .gif {
-    width: 80%;
+    width: 100%;
     max-width: 350px;
     border-radius: 10%;
-    margin: 20px auto;
+    margin-bottom: 50px;
     height: auto;
 }
 
@@ -72,8 +96,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    padding: 20px;
+    margin: 0;
 }
 
 .butt {
@@ -82,84 +105,61 @@
     background-color: rgb(55, 48, 48) !important;
     border-radius: 70px;
     border: none;
+    padding: 20px;
     color: black;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    text-align: center;
-    margin: 20px auto;
 }
 
 .butt:hover {
-    background-color: rgb(75, 65, 65) !important;
+    background-color: rgb(55, 48, 48) !important;
 }
 
 .bottom-container {
     background-color: black;
-    padding: 20px 0;
+    padding: 50px 0 20px;
     text-align: center;
 }
 
 .footer-link {
     margin: 0 20px;
     color: white;
-    text-decoration: none;
-}
-
-.footer-link:hover {
-    text-decoration: underline;
 }
 
 @media (max-width: 768px) {
     .tit {
-        font-size: 8vw;
+        font-size: 50px;
     }
-    
+
     .tit2 {
-        font-size: 6vw;
+        font-size: 40px;
     }
-    
+
     .word {
         font-size: 2rem;
     }
-    
-    .myphot {
-        height: 120px;
-        width: 120px;
+
+    .word1 {
+        font-size: 1rem;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
     }
 
     .gif-class, .gif {
-        width: 90%;
-    }
-
-    .butt {
+        margin: 0 auto;
         width: 80%;
     }
-}
-
-@media (max-width: 480px) {
-    .tit {
-        font-size: 10vw;
-    }
-    
-    .tit2 {
-        font-size: 8vw;
-    }
-    
-    .word {
-        font-size: 1.5rem;
-    }
 
     .myphot {
-        height: 100px;
-        width: 100px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .gif-class, .gif {
-        width: 100%;
-    }
-
-    .butt {
-        width: 100%;
+    .ameert {
+        text-align: center;
     }
 }
